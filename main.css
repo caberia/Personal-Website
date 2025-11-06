@@ -789,6 +789,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+}
+.landing1-page-body-container main .important-note {
+  position: absolute;
+  bottom: 0;
+  left: 2.5%;
+  transform: translateY(50%);
+  width: 20%;
+  bottom: 50%;
+  font-family: Erode;
+  color: #ECF4EE;
+  font-weight: bold;
 }
 .landing1-page-body-container main .buttons-wrapper {
   height: 100%;
