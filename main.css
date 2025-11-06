@@ -45,6 +45,7 @@ img {
   height: auto;
   border-radius: 40px;
   transition: all 0.3s ease-out;
+  text-decoration: none;
 }
 .primary-button p {
   color: #ECF4EE;
@@ -52,6 +53,7 @@ img {
   font-family: Satoshi;
   text-box: trim-both none alphabetic;
   transition: all 0.3s ease-out;
+  text-align: center;
 }
 
 .primary-button:hover {
@@ -161,7 +163,7 @@ p {
     line-height: 4rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 475px) {
   h3 {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -399,7 +401,7 @@ p {
   flex-direction: column;
   gap: 2rem;
   background-color: #161215;
-  margin-bottom: 3rem;
+  margin: 0 1.5rem 3rem 1.5rem;
 }
 .about-me-body-container #experience .experience-container .xp-card-container .xp-card .xp-text {
   margin: 2rem;
@@ -427,6 +429,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 1rem;
   }
   .about-me-body-container #experience .experience-container .xp-card-container h5 {
     color: #ECF4EE;
@@ -434,6 +437,7 @@ p {
   .about-me-body-container #experience .experience-container .xp-card-container p {
     width: auto;
     color: #ECF4EE;
+    max-width: 268px;
   }
   .about-me-body-container #experience .experience-container .xp-card-container .xp-card {
     display: flex;
@@ -441,6 +445,7 @@ p {
     gap: 2rem;
     background-color: #161215;
     justify-content: center;
+    margin: 0 3vw;
   }
   .about-me-body-container #experience .experience-container .xp-card-container .xp-card .xp-text {
     margin: 2rem;
@@ -487,6 +492,7 @@ p {
 .about-me-body-container #to-gtkmd .gtkmd-cta-container .cta-text-container .cta-text-wrapper {
   display: flex;
   justify-content: center;
+  margin: 0 1rem;
 }
 .about-me-body-container #to-gtkmd .gtkmd-cta-container .cta-text-container .cta-text {
   display: flex;
@@ -872,136 +878,40 @@ p {
     margin: 0;
   }
 }
-.landing2-page-body-container {
-  height: 100vh;
+.gtkmd-body-container {
   height: 100dvh;
   width: 100vw;
-  background-color: #161215;
-}
-.landing2-page-body-container main {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.landing2-page-body-container main h1 {
-  color: #ECF4EE;
-  text-align: right;
-}
-.landing2-page-body-container main .cta-wrapper {
-  height: 100%;
-  flex: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.landing2-page-body-container main .buttons-wrapper {
-  height: 100%;
-  flex: 1;
-  background-color: #005566;
-  display: flex;
-  flex-direction: column;
-}
-.landing2-page-body-container main h6 {
-  color: #ECF4EE;
-  font-weight: 100;
-  transition: all 0.3s ease-out;
-  text-box: trim-both ex alphabetic;
-}
-.landing2-page-body-container main a {
-  text-decoration: none;
-  transition: all 0.3s ease-out;
-}
-.landing2-page-body-container main svg {
-  width: 0;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 0.35s ease-in-out;
-}
-.landing2-page-body-container main .button {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 2vw;
-}
-.landing2-page-body-container a:hover {
-  background-color: #161215;
-}
-.landing2-page-body-container a:hover h6 {
-  transform: translateX(50%);
-}
-.landing2-page-body-container a:hover svg {
-  width: 30px;
-  opacity: 1;
-  color: #ECF4EE;
-}
-.landing2-page-body-container a:hover .svg-about {
-  width: 30px;
-  opacity: 1;
-  color: #ECF4EE;
-  transform: translateX(105%);
-}
-.landing2-page-body-container a:hover .svg-skills {
-  width: 30px;
-  opacity: 1;
-  color: #ECF4EE;
-  transform: translateX(90%);
-}
-.landing2-page-body-container a:hover .svg-projects {
-  width: 30px;
-  opacity: 1;
-  color: #ECF4EE;
-  transform: translateX(140%);
-}
-.landing2-page-body-container a:hover .svg-contact {
-  width: 30px;
-  opacity: 1;
-  color: #ECF4EE;
-  transform: translateX(130%);
-}
-
-.gtkmd-body-container html, .gtkmd-body-container body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; /* Hide scrollbars */
-}
-.gtkmd-body-container body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 .gtkmd-body-container .welcome {
-  width: clamp(320px, 55vw, 600px);
-  height: auto;
   display: flex;
   flex-direction: column;
-}
-.gtkmd-body-container .hey {
-  font-size: 3rem;
-  margin: 5vh 0;
-  padding: 0;
-  text-align: center;
+  align-items: flex-start;
+  margin: 2rem;
+  gap: 2.5rem;
 }
 .gtkmd-body-container .welcome-text {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
+  line-height: 1.1rem;
 }
 .gtkmd-body-container .map-container {
-  height: auto;
-  max-width: 75rem;
-  width: 90vw;
-  flex-grow: 1;
+  flex: 1;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .gtkmd-body-container #map {
+  width: clamp(60%, 35rem, 95%);
   height: 80%;
-  width: 60%;
-  border: var(--color-1) solid 0.5rem;
-  border-radius: 10px;
-  min-width: 320px;
+  border: #161215 0.25rem solid;
+  border-radius: 0.25rem;
+}
+.gtkmd-body-container #map:hover {
+  cursor: grab;
+}
+.gtkmd-body-container #map:active {
+  cursor: grabbing;
 }/*# sourceMappingURL=main.css.map */
